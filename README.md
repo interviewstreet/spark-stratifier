@@ -4,6 +4,8 @@
 
 When we first started working Spark at HackerRank, we realized that within our dataset, the size of our outcome sets varied in size by quite a bit. This led to inconsistent model cross validation and training. However, with [**stratified sampling**](https://en.wikipedia.org/wiki/Stratified_sampling), we were able to eliminate these inconsistencies and improve overall model predictions. The goal of `spark-stratifier` is to provide a tool to stratify datasets for cross validation in `PySpark`. This class extends the current `CrossValidator` class in Spark.
 
+Currently, the stratified cross validator works with binary classification problems using labels `0` and `1`.
+
 Read more at [engineering.hackerrank.com](https://engineering.hackerrank.com/)
 
 Requirements
