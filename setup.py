@@ -2,7 +2,7 @@
 
 from setuptools import setup
 
-version = '0.1.2'
+version = '0.1.3'
 
 setup(
     name='spark_stratifier',
@@ -13,5 +13,6 @@ setup(
     url='https://github.com/interviewstreet/spark-stratifier',
     license='MIT',
     packages=['spark_stratifier'],
+    long_description=open('README.rst').read(),
     install_requires=open('requirements.txt').read().split()
 )
