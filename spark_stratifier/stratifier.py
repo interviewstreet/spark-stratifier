@@ -10,6 +10,7 @@ from pyspark.ml.tuning import CrossValidator, CrossValidatorModel
 from pyspark.ml.util import *
 from pyspark.ml.wrapper import JavaParams
 from pyspark.sql.functions import rand
+from functools import reduce
 
 class StratifiedCrossValidator(CrossValidator):
   def stratify_data(self, dataset):
