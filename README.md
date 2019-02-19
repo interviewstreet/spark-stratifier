@@ -22,14 +22,15 @@ Example
 -------
 You basically use this the exact same way you would with the Spark `CrossValidator`... except this time, your data will be stratified.
 
-```
+```py
 from spark_stratifier import StratifiedCrossValidator
 
 scv = StratifiedCrossValidator(
-    estimator=pipeline,
-    estimatorParamMaps=paramGrid,
-    evaluator=evaluator,
-    numFolds=8)
+        estimator=pipeline,
+        estimatorParamMaps=paramGrid,
+        evaluator=evaluator,
+        numFolds=8
+      )
 
 model = scv.fit(matrix)
 ```
